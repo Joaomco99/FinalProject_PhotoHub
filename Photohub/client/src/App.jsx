@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import FeedPage from "./pages/FeedPage/FeedPage"; 
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
@@ -17,7 +18,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-
+        <Route path="/feed" element={<FeedPage />} /> 
         <Route
           path="/profile"
           element={
@@ -26,7 +27,6 @@ function App() {
             </IsPrivate>
           }
         />
-
         <Route
           path="/signup"
           element={
