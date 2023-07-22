@@ -21,7 +21,15 @@ app.use("/api", indexRoutes);
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 
 module.exports = app;
+
+const index = require('./routes/index.routes'); // <== already included
+app.use('/', index); // <== already included
+ 
+const photosRouter = require('./routes/Photos.routes'); // <== has to be added
+app.use('/photos', photosRouter); // <== has to be added
+
