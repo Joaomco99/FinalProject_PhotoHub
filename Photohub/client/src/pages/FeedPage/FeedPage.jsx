@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../context/auth.context';
+import "./FeedPage.css";
 
 function FeedPage() {
   const { isLoggedIn } = useContext(AuthContext);
