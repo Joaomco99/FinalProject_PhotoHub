@@ -30,6 +30,5 @@ module.exports = app;
 const index = require('./routes/index.routes'); // <== already included
 app.use('/', index); // <== already included
  
-const photosRouter = require('./routes/Photos.routes'); // <== has to be added
-app.use('/photos', photosRouter); // <== has to be added
+
 
